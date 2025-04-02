@@ -1,0 +1,30 @@
+data:
+  saved_bank_config:
+    MySQL - t212:
+    - db_type: MySQL
+      db_ip: 127.0.0.1:3306
+      db_name: t212
+      db_user: t222
+      db_password: te22
+      redis_path: D:/Code/auto-deployment/venv
+      redis_port: '2222'
+      server_path: D:/Code/auto-deployment/utils
+      server_port: '777'
+      client_path: D:/Code/auto-deployment/shell
+      client_port: '4444'
+      log_path: D:/Code/auto-deployment/gui
+      war_path: D:/Code/auto-deployment/build
+    MySQL - t2_cpv2:
+    - db_type: MySQL
+      db_ip: 127.0.0.1:3306
+      db_name: t2_cpv2
+      db_user: root
+      db_password: '123456'
+      redis_path: ''
+      redis_port: '3333'
+      server_path: C:/Users/caos/Downloads/新银行接口所需资料_20190923(3)/新银行接口所需资料_20190923/服务平台/Tomcat
+      server_port: '4444'
+      client_path: C:/Users/caos/Downloads/新银行接口所需资料_20190923(3)/新银行接口所需资料_20190923/客户端/Tomcat
+      client_port: '8888'
+      log_path: D:/Code/auto-deployment/gui
+      war_path: C:/Users/caos/Downloads/T2_220402-2

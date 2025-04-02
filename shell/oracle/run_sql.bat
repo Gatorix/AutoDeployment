@@ -1,0 +1,1 @@
+echo exit | sqlplus tester/tester@192.168.5.249:1521/orcl @D:\\Code\\auto-deployment\\data\\resource\\sql\\init\\oracle\\10010009.sql

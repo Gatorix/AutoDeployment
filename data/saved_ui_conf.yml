@@ -1,0 +1,31 @@
+data:
+  t2:
+    db:
+      t2_db_conf_name: MySQL - t2_cpv2
+      t2_db_type: MySQL
+      t2_db_ip: 127.0.0.1:3306
+      t2_db_name: t2_cpv2
+      t2_db_user: t2
+      t2_db_password: t2
+    path:
+      t2_program_path: D:/Tools/latest/latest2
+      t2_tomcat_path: D:/Tools/tomcat-build/tomcat-build
+      t2_update_path: D:/Tools/SYS_UPDATE
+      t2_biz_port: '9685'
+      t2_update_port: '9787'
+  bank:
+    db:
+      bank_db_type: MySQL
+      bank_db_ip: 127.0.0.1:3306
+      bank_db_name: t2_cpv2
+      bank_db_user: root
+      bank_db_password: '123456'
+    path:
+      bank_redis_path: ''
+      bank_redis_port: '3333'
+      bank_server_path: C:/Users/caos/Downloads/新银行接口所需资料_20190923(3)/新银行接口所需资料_20190923/服务平台/Tomcat
+      bank_server_port: '4444'
+      bank_client_path: C:/Users/caos/Downloads/新银行接口所需资料_20190923(3)/新银行接口所需资料_20190923/客户端/Tomcat
+      bank_client_port: '8888'
+      bank_log_path: D:/Code/auto-deployment/gui
+      bank_war_path: C:/Users/caos/Downloads/T2_220402-2

@@ -1,0 +1,1163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OneClick</class>
+ <widget class="QWidget" name="OneClick">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1200</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1200</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>拜特测试环境启动工具（内部）</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../data/resource/icon.png</normaloff>../../data/resource/icon.png</iconset>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1201</width>
+     <height>701</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::DefaultContextMenu</enum>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab_t2_env">
+    <attribute name="title">
+     <string>业务系统环境</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_te_path_config">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>10</y>
+       <width>821</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>路径配置</string>
+     </property>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>801</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_te_program_path">
+         <property name="text">
+          <string>程序包路径：</string>
+         </property>
+         <property name="buddy">
+          <cstring>lineEdit_te_program_path</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1" colspan="4">
+        <widget class="QLineEdit" name="lineEdit_te_program_path">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="5">
+        <widget class="QToolButton" name="toolButton_te_program_path_selecter">
+         <property name="text">
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_te_tomcat_path">
+         <property name="text">
+          <string>Tomcat路径：</string>
+         </property>
+         <property name="buddy">
+          <cstring>lineEdit_te_tomcat_path</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="lineEdit_te_tomcat_path">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QToolButton" name="toolButton_te_tomcat_path_selecter">
+         <property name="text">
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLabel" name="label_biz_port">
+         <property name="text">
+          <string>业务系统端口：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4" colspan="2">
+        <widget class="QLineEdit" name="lineEdit_biz_port"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_te_update_path">
+         <property name="text">
+          <string>升级工具路径：</string>
+         </property>
+         <property name="buddy">
+          <cstring>lineEdit_te_update_path</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="lineEdit_te_update_path">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QToolButton" name="toolButton_te_update_path_selecter">
+         <property name="text">
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QLabel" name="label_update_port">
+         <property name="text">
+          <string>升级工具端口：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="4" colspan="2">
+        <widget class="QLineEdit" name="lineEdit_update_port"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_te_structure_path">
+         <property name="text">
+          <string>构建包路径：   </string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="lineEdit_te_structure_path">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QToolButton" name="toolButton_te_structure_path_selecter">
+         <property name="text">
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QLabel" name="label_te_structure_name">
+         <property name="text">
+          <string>构建包名称：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="4" colspan="2">
+        <widget class="QLineEdit" name="lineEdit_te_structure_name">
+         <property name="toolTip">
+          <string>如“B20220100001”或“V22010001”，多个构建包可使用半角逗号隔开。</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_te_patch_path">
+         <property name="text">
+          <string>补丁包路径：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="lineEdit_te_patch_path">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QToolButton" name="toolButton_te_patch_path_selecter">
+         <property name="text">
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3">
+        <widget class="QLabel" name="label_te_patch_name">
+         <property name="text">
+          <string>补丁包名称：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="4" colspan="2">
+        <widget class="QLineEdit" name="lineEdit_te_patch_name"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_te_db_config">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>351</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>数据库配置</string>
+     </property>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>331</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="1" column="1" colspan="2">
+        <widget class="QComboBox" name="comboBox_te_db_type">
+         <item>
+          <property name="text">
+           <string>MySQL</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Oracle</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>SQLServer</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_te_db_user">
+         <property name="text">
+          <string>用户名：</string>
+         </property>
+         <property name="buddy">
+          <cstring>lineEdit_te_db_user</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1" colspan="2">
+        <widget class="QLineEdit" name="lineEdit_te_db_ip"/>
+       </item>
+       <item row="3" column="1" colspan="2">
+        <widget class="QLineEdit" name="lineEdit_te_db_name">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_te_db_ip">
+         <property name="text">
+          <string>主机/端口：</string>
+         </property>
+         <property name="buddy">
+          <cstring>lineEdit_te_db_ip</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_te_db_type">
+         <property name="text">
+          <string>数据库类型：</string>
+         </property>
+         <property name="buddy">
+          <cstring>comboBox_te_db_type</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_te_db_password">
+         <property name="text">
+          <string>密码：</string>
+         </property>
+         <property name="buddy">
+          <cstring>lineEdit_te_db_password</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1" colspan="2">
+        <widget class="QLineEdit" name="lineEdit_te_db_user"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_te_db_name">
+         <property name="text">
+          <string>数据库/实例：</string>
+         </property>
+         <property name="buddy">
+          <cstring>lineEdit_te_db_ip</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1" colspan="2">
+        <widget class="QLineEdit" name="lineEdit_te_db_password"/>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_te_db_save_current_config">
+         <property name="text">
+          <string>已保存的环境：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1" colspan="2">
+        <widget class="QComboBox" name="comboBox_te_db_config_name"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>200</y>
+        <width>331</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_6">
+       <item row="0" column="2">
+        <widget class="QPushButton" name="pushButton_te_db_test">
+         <property name="text">
+          <string>连接测试</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="pushButton_te_install_mysql">
+         <property name="text">
+          <string>初始化数据库</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QPushButton" name="pushButton_te_db_save_current_config">
+         <property name="contextMenuPolicy">
+          <enum>Qt::CustomContextMenu</enum>
+         </property>
+         <property name="text">
+          <string>保存配置</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>1080</x>
+       <y>570</y>
+       <width>111</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_7">
+      <item row="0" column="0">
+       <widget class="QPushButton" name="pushButton_te_update_structure">
+        <property name="text">
+         <string>更新构建包</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="pushButton_te_start_update">
+        <property name="contextMenuPolicy">
+         <enum>Qt::CustomContextMenu</enum>
+        </property>
+        <property name="text">
+         <string>更新补丁包</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="pushButton_te_start_t2">
+        <property name="contextMenuPolicy">
+         <enum>Qt::CustomContextMenu</enum>
+        </property>
+        <property name="text">
+         <string>启动业务系统</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QTabWidget" name="tabWidget_te_log">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>250</y>
+       <width>1061</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="tabPosition">
+      <enum>QTabWidget::North</enum>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab_tool_log">
+      <attribute name="title">
+       <string>日志</string>
+      </attribute>
+      <layout class="QFormLayout" name="formLayout">
+       <item row="0" column="0" colspan="2">
+        <widget class="QTextBrowser" name="textBrowser_te_logs">
+         <property name="contextMenuPolicy">
+          <enum>Qt::CustomContextMenu</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_bank_env">
+    <attribute name="title">
+     <string>银行接口环境</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_be_db_config">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>351</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>数据库配置</string>
+     </property>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>331</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_be_db_type">
+         <property name="text">
+          <string>数据库类型：</string>
+         </property>
+         <property name="buddy">
+          <cstring>comboBox_be_db_type</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_be_db_ip">
+         <property name="text">
+          <string>主机/端口：</string>
+         </property>
+         <property name="buddy">
+          <cstring>lineEdit_be_db_ip</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1" colspan="2">
+        <widget class="QLineEdit" name="lineEdit_be_db_ip"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_be_db_name">
+         <property name="text">
+          <string>数据库/实例：</string>
+         </property>
+         <property name="buddy">
+          <cstring>lineEdit_be_db_ip</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1" colspan="2">
+        <widget class="QLineEdit" name="lineEdit_be_db_name"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_be_db_user">
+         <property name="text">
+          <string>用户名：</string>
+         </property>
+         <property name="buddy">
+          <cstring>lineEdit_be_db_user</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1" colspan="2">
+        <widget class="QLineEdit" name="lineEdit_be_db_user"/>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_be_db_password">
+         <property name="text">
+          <string>密码：</string>
+         </property>
+         <property name="buddy">
+          <cstring>lineEdit_be_db_password</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1" colspan="2">
+        <widget class="QLineEdit" name="lineEdit_be_db_password"/>
+       </item>
+       <item row="1" column="1" colspan="2">
+        <widget class="QComboBox" name="comboBox_be_db_type">
+         <item>
+          <property name="text">
+           <string>MySQL</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Oracle</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>SQLServer</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_be_saved_config">
+         <property name="text">
+          <string>已保存的环境：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1" colspan="2">
+        <widget class="QComboBox" name="comboBox_be_db_config_name"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>200</y>
+        <width>331</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_9">
+       <item row="0" column="0">
+        <widget class="QPushButton" name="pushButton_be_db_save_current_config">
+         <property name="contextMenuPolicy">
+          <enum>Qt::CustomContextMenu</enum>
+         </property>
+         <property name="text">
+          <string>保存配置</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="pushButton_be_run_update_sql">
+         <property name="text">
+          <string>执行升级</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="pushButton_be_db_test">
+         <property name="text">
+          <string>连接测试</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_be_path_config">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>10</y>
+       <width>521</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>路径配置</string>
+     </property>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>501</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_be_redis_path">
+         <property name="text">
+          <string>Redis路径：</string>
+         </property>
+         <property name="buddy">
+          <cstring>lineEdit_be_redis_path</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="lineEdit_be_redis_path">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="clearButtonEnabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QToolButton" name="toolButton_be_redis_path_selecter">
+         <property name="text">
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLabel" name="label_be_redis_port">
+         <property name="text">
+          <string>Redis端口：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_be_server_path">
+         <property name="text">
+          <string>服务端路径：</string>
+         </property>
+         <property name="buddy">
+          <cstring>lineEdit_be_server_path</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="lineEdit_be_server_path">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QToolButton" name="toolButton_be_server_path_selecter">
+         <property name="text">
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLabel" name="label_be_server_port">
+         <property name="text">
+          <string>服务端端口：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_be_client_path">
+         <property name="text">
+          <string>客户端路径：</string>
+         </property>
+         <property name="buddy">
+          <cstring>lineEdit_be_client_path</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="lineEdit_be_client_path">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QToolButton" name="toolButton_be_client_path_selecter">
+         <property name="text">
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QLabel" name="label_be_client_port">
+         <property name="text">
+          <string>客户端端口：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_be_logs_path">
+         <property name="text">
+          <string>日志路径：</string>
+         </property>
+         <property name="buddy">
+          <cstring>lineEdit_be_logs_path</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1" colspan="4">
+        <widget class="QLineEdit" name="lineEdit_be_logs_path">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="5">
+        <widget class="QToolButton" name="toolButton_be_logs_path_selecter">
+         <property name="text">
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_be_war_path">
+         <property name="text">
+          <string>War包路径：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1" colspan="4">
+        <widget class="QLineEdit" name="lineEdit_be_war_path">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="5">
+        <widget class="QToolButton" name="toolButton_be_war_path_selecter">
+         <property name="text">
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="4" colspan="2">
+        <widget class="QLineEdit" name="lineEdit_be_client_port"/>
+       </item>
+       <item row="1" column="4" colspan="2">
+        <widget class="QLineEdit" name="lineEdit_be_server_port"/>
+       </item>
+       <item row="0" column="4" colspan="2">
+        <widget class="QLineEdit" name="lineEdit_be_redis_port"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="pushButton_unzip_war_package">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>200</y>
+        <width>91</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>War包解压</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QTabWidget" name="tabWidget_be_log">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>250</y>
+       <width>881</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="tabPosition">
+      <enum>QTabWidget::North</enum>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab_be_logs">
+      <attribute name="title">
+       <string>日志</string>
+      </attribute>
+      <layout class="QFormLayout" name="formLayout_2">
+       <item row="0" column="0" colspan="2">
+        <widget class="QTextBrowser" name="textBrowser_be_logs">
+         <property name="contextMenuPolicy">
+          <enum>Qt::CustomContextMenu</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_bank_front_config">
+     <property name="geometry">
+      <rect>
+       <x>900</x>
+       <y>10</y>
+       <width>291</width>
+       <height>621</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>前置机配置</string>
+     </property>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>11</x>
+        <y>21</y>
+        <width>271</width>
+        <height>561</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_8" rowstretch="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+       <item row="12" column="0">
+        <widget class="QLabel" name="label_be_bank_config_version_13">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="16" column="0">
+        <widget class="QLabel" name="label_be_bank_config_version_18">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="0">
+        <widget class="QLabel" name="label_be_bank_config_version_9">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="label_be_bank_config_version_7">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_be_bank_type">
+         <property name="text">
+          <string>银行类型：</string>
+         </property>
+         <property name="buddy">
+          <cstring>comboBox_be_bank_type</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_be_bank_config_version_5">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="21" column="0">
+        <widget class="QLabel" name="label_be_bank_config_version_16">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="label_be_bank_config_version_12">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="18" column="0">
+        <widget class="QLabel" name="label_be_bank_config_version_19">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label_be_bank_config_version_10">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="0">
+        <widget class="QLabel" name="label_be_bank_config_version_14">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="17" column="0">
+        <widget class="QLabel" name="label_be_bank_config_version_17">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="15" column="0">
+        <widget class="QLabel" name="label_be_bank_config_version_15">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="19" column="0">
+        <widget class="QLabel" name="label_be_bank_config_version_20">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_be_bank_config_version_4">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_be_bank_config_version_6">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_be_bank_config_version">
+         <property name="text">
+          <string>配置文件：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_be_bank_config_version_3">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="lineEdit_be_bank_config">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_be_bank_config_version_2">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="0">
+        <widget class="QLabel" name="label_be_bank_config_version_8">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="0">
+        <widget class="QLabel" name="label_be_bank_config_version_11">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QComboBox" name="comboBox_be_bank_type"/>
+       </item>
+       <item row="20" column="0">
+        <widget class="QLabel" name="label_be_bank_config_version_21">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="pushButton_save_bank_front_config">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>590</y>
+        <width>112</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>保存前置机配置</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>900</x>
+       <y>640</y>
+       <width>291</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_5">
+      <item row="0" column="0">
+       <widget class="QPushButton" name="pushButton_be_start_redis">
+        <property name="contextMenuPolicy">
+         <enum>Qt::CustomContextMenu</enum>
+        </property>
+        <property name="text">
+         <string>启动Redis</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="pushButton_be_start_server">
+        <property name="contextMenuPolicy">
+         <enum>Qt::CustomContextMenu</enum>
+        </property>
+        <property name="text">
+         <string>启动服务端</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="pushButton_be_start_client">
+        <property name="contextMenuPolicy">
+         <enum>Qt::CustomContextMenu</enum>
+        </property>
+        <property name="text">
+         <string>启动客户端</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>comboBox_te_db_config_name</tabstop>
+  <tabstop>comboBox_te_db_type</tabstop>
+  <tabstop>lineEdit_te_db_ip</tabstop>
+  <tabstop>lineEdit_te_db_name</tabstop>
+  <tabstop>lineEdit_te_db_user</tabstop>
+  <tabstop>lineEdit_te_db_password</tabstop>
+  <tabstop>pushButton_te_db_save_current_config</tabstop>
+  <tabstop>pushButton_te_install_mysql</tabstop>
+  <tabstop>pushButton_te_db_test</tabstop>
+  <tabstop>textBrowser_te_logs</tabstop>
+  <tabstop>lineEdit_te_program_path</tabstop>
+  <tabstop>lineEdit_te_tomcat_path</tabstop>
+  <tabstop>lineEdit_te_update_path</tabstop>
+  <tabstop>lineEdit_te_structure_path</tabstop>
+  <tabstop>lineEdit_te_patch_path</tabstop>
+  <tabstop>lineEdit_biz_port</tabstop>
+  <tabstop>lineEdit_update_port</tabstop>
+  <tabstop>lineEdit_te_structure_name</tabstop>
+  <tabstop>lineEdit_te_patch_name</tabstop>
+  <tabstop>toolButton_te_program_path_selecter</tabstop>
+  <tabstop>toolButton_te_tomcat_path_selecter</tabstop>
+  <tabstop>toolButton_te_update_path_selecter</tabstop>
+  <tabstop>toolButton_te_structure_path_selecter</tabstop>
+  <tabstop>toolButton_te_patch_path_selecter</tabstop>
+  <tabstop>pushButton_te_update_structure</tabstop>
+  <tabstop>pushButton_te_start_update</tabstop>
+  <tabstop>pushButton_te_start_t2</tabstop>
+  <tabstop>comboBox_be_db_config_name</tabstop>
+  <tabstop>comboBox_be_db_type</tabstop>
+  <tabstop>lineEdit_be_db_ip</tabstop>
+  <tabstop>lineEdit_be_db_name</tabstop>
+  <tabstop>lineEdit_be_db_user</tabstop>
+  <tabstop>lineEdit_be_db_password</tabstop>
+  <tabstop>pushButton_be_run_update_sql</tabstop>
+  <tabstop>pushButton_be_db_save_current_config</tabstop>
+  <tabstop>textBrowser_be_logs</tabstop>
+  <tabstop>lineEdit_be_redis_path</tabstop>
+  <tabstop>lineEdit_be_server_path</tabstop>
+  <tabstop>lineEdit_be_client_path</tabstop>
+  <tabstop>lineEdit_be_logs_path</tabstop>
+  <tabstop>lineEdit_be_war_path</tabstop>
+  <tabstop>lineEdit_be_redis_port</tabstop>
+  <tabstop>lineEdit_be_server_port</tabstop>
+  <tabstop>lineEdit_be_client_port</tabstop>
+  <tabstop>comboBox_be_bank_type</tabstop>
+  <tabstop>pushButton_be_start_redis</tabstop>
+  <tabstop>pushButton_be_start_server</tabstop>
+  <tabstop>pushButton_be_start_client</tabstop>
+  <tabstop>toolButton_be_client_path_selecter</tabstop>
+  <tabstop>toolButton_be_redis_path_selecter</tabstop>
+  <tabstop>tabWidget_be_log</tabstop>
+  <tabstop>toolButton_be_server_path_selecter</tabstop>
+  <tabstop>toolButton_be_logs_path_selecter</tabstop>
+  <tabstop>tabWidget_te_log</tabstop>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>toolButton_be_war_path_selecter</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

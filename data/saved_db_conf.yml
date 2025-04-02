@@ -1,0 +1,35 @@
+data:
+  saved_db_config:
+    MySQL - t2:
+    - db_type: MySQL
+      db_ip: 127.0.0.1:3306
+      db_name: t2
+      db_user: t2
+      db_password: t2
+      program_path: D:/Tools/latest/latest2
+      tomcat_path: D:/Tools/tomcat-build/tomcat-build
+      biz_port: '9685'
+      update_path: D:/Tools/SYS_UPDATE
+      update_port: '9787'
+    MySQL - t2_cpv2:
+    - db_type: MySQL
+      db_ip: 127.0.0.1:3306
+      db_name: t2_cpv2
+      db_user: t2
+      db_password: t2
+      program_path: D:/Tools/latest/latest2
+      tomcat_path: D:/Tools/tomcat-build/tomcat-build
+      biz_port: '9685'
+      update_path: D:/Tools/SYS_UPDATE
+      update_port: '9787'
+    MySQL - t2_cpv28:
+    - db_type: MySQL
+      db_ip: 127.0.0.1:3306
+      db_name: t2_cpv2
+      db_user: t2
+      db_password: t2
+      program_path: D:/Tools/latest/latest2
+      tomcat_path: D:/Tools/tomcat-build/tomcat-build
+      biz_port: '9687'
+      update_path: D:/Tools/SYS_UPDATE
+      update_port: '9787'

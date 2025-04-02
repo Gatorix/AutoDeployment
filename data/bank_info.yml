@@ -1,0 +1,199 @@
+bankInfo:
+  - bankName: 中信银行
+    bif_code: 9001
+    bif_name: citic
+  - bankName: 光大银行
+    bif_code: 9002
+    bif_name: cebb
+  - bankName: 华夏银行
+    bif_code: 9003
+    bif_name: hxb
+  - bankName: 招商银行
+    bif_code: 9004
+    bif_name: cmb_new
+  - bankName: 交通银行
+    bif_code: 9005
+    bif_name: commb_pub
+  - bankName: 平安银行
+    bif_code: 9006
+    bif_name: sdb_new
+  - bankName: 广东发展银行
+    bif_code: 9007
+    bif_name: gdb_new
+  - bankName: 建行重客
+    bif_code: 9008
+    bif_name: ccbvss
+  - bankName: 农业银行
+    bif_code: 9009
+    bif_name: abc_new
+  - bankName: 民生银行
+    bif_code: 9010
+    bif_name: cmbc
+  - bankName: 上海银行
+    bif_code: 9011
+    bif_name: bosh
+  - bankName: 兴业银行
+    bif_code: 9015
+    bif_name: cib
+  - bankName: 广州商业银行
+    bif_code: 9016
+    bif_name: gzcb_pub
+  - bankName: 渤海银行
+    bif_code: 9017
+    bif_name: cbhb
+  - bankName: 建行银行b2b
+    bif_code: 9018
+    bif_name: ccbb2b
+  - bankName: 建行银行(现金管理平台专线)
+    bif_code: 9018
+    bif_name: ccbvss_new
+  - bankName: 建行银行(新一代)
+    bif_code: 9018
+    bif_name: ccb_new
+  - bankName: 浦发银行
+    bif_code: 9020
+    bif_name: spdb
+  - bankName: 中国银行
+    bif_code: 9021
+    bif_name: bocnet
+  - bankName: 浙江商业银行
+    bif_code: 9022
+    bif_name: czbank
+  - bankName: 渣打银行
+    bif_code: 9024
+    bif_name: scb
+  - bankName: 北京银行
+    bif_code: 9025
+    bif_name: bobj
+  - bankName: 昆明富滇银行(新)
+    bif_code: 9028
+    bif_name: kccb_new
+  - bankName: 威海银行
+    bif_code: 9029
+    bif_name: whccb_new
+  - bankName: 邮政储蓄银行
+    bif_code: 9032
+    bif_name: psbc
+  - bankName: 重庆银行
+    bif_code: 9033
+    bif_name: bocq
+  - bankName: 宁波银行
+    bif_code: 9038
+    bif_name: nbcb
+  - bankName: 工商银行
+    bif_code: 9040
+    bif_name: icbcsum
+  - bankName: 恒丰银行
+    bif_code: 9042
+    bif_name: egb
+  - bankName: 汉口银行
+    bif_code: 9043
+    bif_name: hkb
+  - bankName: 哈尔滨银行
+    bif_code: 9044
+    bif_name: hrbcb
+  - bankName: 长安银行
+    bif_code: 9045
+    bif_name: ccab
+  - bankName: 南京银行
+    bif_code: 9046
+    bif_name: njcb_new
+  - bankName: 法国巴黎银行
+    bif_code: 9047
+    bif_name: bnpp
+  - bankName: 天津农商行
+    bif_code: 9051
+    bif_name: trcb
+  - bankName: 江苏银行
+    bif_code: 9053
+    bif_name: jsbc
+  - bankName: 花旗银行
+    bif_code: 9054
+    bif_name: citi
+  - bankName: 广州农商银行
+    bif_code: 9056
+    bif_name: gzrcb
+  - bankName: 星展银行
+    bif_code: 9057
+    bif_name: dbs
+  - bankName: 龙江银行
+    bif_code: 9058
+    bif_name: ljbank
+  - bankName: 北部湾银行
+    bif_code: 9059
+    bif_name: bbg
+  - bankName: 温州银行
+    bif_code: 9060
+    bif_name: wzcb
+  - bankName: 广西农村信用社
+    bif_code: 9061
+    bif_name: gxnx
+  - bankName: 延峰财务
+    bif_code: 9062
+    bif_name: yfcw
+  - bankName: 云南农村信用社
+    bif_code: 9063
+    bif_name: ynnxbank_new
+  - bankName: 鄞州银行
+    bif_code: 9064
+    bif_name: beeb
+  - bankName: 北京农村商业银行
+    bif_code: 9065
+    bif_name: bjrcb
+  - bankName: 潍坊银行
+    bif_code: 9066
+    bif_name: wfccb
+  - bankName: 兰州银行
+    bif_code: 9067
+    bif_name: lzbank
+  - bankName: 汇丰银行
+    bif_code: 9068
+    bif_name: hsbc
+  - bankName: 国家开发银行
+    bif_code: 9069
+    bif_name: cdb
+  - bankName: 齐鲁银行
+    bif_code: 9070
+    bif_name: qlbc
+  - bankName: 盛京银行
+    bif_code: 9071
+    bif_name: sjbc
+  - bankName: 山东农村信用社银行
+    bif_code: 9073
+    bif_name: sdnxs
+  - bankName: 郑州银行
+    bif_code: 9074
+    bif_name: zzbank
+  - bankName: 中铝财务
+    bif_code: 9075
+    bif_name: zhlcw
+  - bankName: 广西农村信用社
+    bif_code: 9076
+    bif_name: gxnx
+  - bankName: 常熟农商银行
+    bif_code: 9077
+    bif_name: csrc
+  - bankName: 天津银行
+    bif_code: 9078
+    bif_name: tccb
+  - bankName: 东莞银行
+    bif_code: 9079
+    bif_name: dgbank
+  - bankName: 临商银行
+    bif_code: 9080
+    bif_name: lsbchina
+  - bankName: 成都银行
+    bif_code: 9081
+    bif_name: bocd_new
+  - bankName: 泸州银行
+    bif_code: 9082
+    bif_name: lzccb
+  - bankName: 曲靖商业银行
+    bif_code: 9083
+    bif_name: qjccb
+  - bankName: 华侨银行
+    bif_code: 9086
+    bif_name: ocbc
+  - bankName: 沧州银行
+    bif_code: 9087
+    bif_name: czccb
